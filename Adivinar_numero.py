@@ -7,6 +7,7 @@ import random
 
 n=int(input("Ingrese su numero: "))
 a=random.randint(1,100)
+i=0
 #processing
 
 while n!=a:
@@ -15,4 +16,5 @@ while n!=a:
     else: 
         print("\nEl numero ingresado es menor al que trata de adivinar, intente nuevamente ")
     n=int(input("\nIngrese nuevamente el numero: "))
-print("\nAdivino, el numero es: "+str(n))
+    i=i+1
+print("\nAdivino, el numero es: "+str(n)+" en "+str(i)+" intentos")
